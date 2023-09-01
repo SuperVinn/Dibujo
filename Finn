@@ -1,0 +1,222 @@
+/*Este es mi primer dibujo en C, espero que a alguien le sirva*/
+ #include <graphics.h>
+ 
+void main(void){
+int driver = DETECT, modo;
+initgraph(&driver, &modo, "c://TC20//BIN");
+cleardevice();
+
+rectangle(1,1,639,260);
+setfillstyle(SOLID_FILL,11);
+bar(1,1,639,260); /*Este es el cuadro de arriba*/
+
+circle(420,100,20); setfillstyle(SOLID_FILL,WHITE);  floodfill(420,100,WHITE);
+/*De esta forma se puede crear un circulo
+ x, y, y su radio r*/
+
+
+rectangle(1,260,639,479);
+setfillstyle(SOLID_FILL,2);/*setfillstyle es para rellenar con rallas
+o algun otro tipo de trazo*/
+bar(1,260,640,480);
+
+setcolor(10);
+line(10,400,20,370);
+line(20,370,30,400);
+
+rectangle(200,400,210,350);/*arriba*/
+setfillstyle(SOLID_FILL,0);
+bar(200,400,210,350); 
+
+setfillstyle(SOLID_FILL,10);
+bar(220,380,210,340);
+setfillstyle(SOLID_FILL,10);
+bar(230,360,220,350);
+
+rectangle(210,350,220,340);
+setfillstyle(SOLID_FILL,0);
+bar(210,350,220,340);
+
+rectangle(220,350,230,340);
+setfillstyle(SOLID_FILL,0);
+bar(220,350,230,340);
+
+rectangle(210,410,220,400);
+setfillstyle(SOLID_FILL,BLACK);
+bar(210,410,220,400);
+
+rectangle(220,420,230,410);
+setfillstyle(SOLID_FILL,BLACK); /*abajo*/
+bar(220,420,250,410); /*Hasta esta parte la mochilita*/
+
+/*Cabeza*/
+setfillstyle(SOLID_FILL,WHITE);
+bar(230,240,350,350);/*cuadro blanco, gorro*/
+
+setfillstyle(SOLID_FILL,14);/*rectangulo amrarillo que supuestamente va a ser la cara*/
+bar(260,280,350,320);
+setfillstyle(SOLID_FILL,14);
+bar(270,270,340,280);/*cuadro de pixeles, arriba para darle forma a la cara, amarillo*/
+setfillstyle(SOLID_FILL,14);
+bar(270,320,340,330);/*cuadro de pixeles, arriba para darle forma a la cara, amarillo*/
+
+setfillstyle(SOLID_FILL,12);
+bar(340,310,330,300);/*pixeles rojo claro, derecha*/
+setfillstyle(SOLID_FILL,12);
+bar(270,310,280,300);/*cuadro de pixeles izq, rojo claro para darle detalles a la cara*/
+setfillstyle(SOLID_FILL,0);
+bar(290,310,280,290);/*ojo izq negro*/
+setfillstyle(SOLID_FILL,0);
+bar(320,310,330,290);/*ojo derecho negro*/
+
+
+setfillstyle(SOLID_FILL,0);
+bar(350,260,360,350);
+
+setfillstyle(SOLID_FILL,0);
+bar(230,350,350,360);
+
+setfillstyle(SOLID_FILL,0);
+bar(340,240,350,250); setfillstyle(SOLID_FILL,0); bar(340,260,350,250); 
+
+setfillstyle(SOLID_FILL,0);
+bar(220,250,230,350);/*izq de la cabeza en n*/
+
+
+setfillstyle(SOLID_FILL,0); /*Derecha gor*/
+bar(330,220,340,240);
+setfillstyle(SOLID_FILL,0);
+bar(310,210,330,220);
+setfillstyle(SOLID_FILL,0);
+bar(300,220,310,240);
+setfillstyle(SOLID_FILL,WHITE);
+bar(310,220,330,240);
+
+setfillstyle(SOLID_FILL,0); /*Izquierda gor*/
+bar(270,220,280,240);
+setfillstyle(SOLID_FILL,0);
+bar(250,210,270,220);
+setfillstyle(SOLID_FILL,0);
+bar(240,220,250,240);
+setfillstyle(SOLID_FILL,WHITE);
+bar(250,220,270,240);
+setfillstyle(SOLID_FILL,0);
+bar(230,250,240,240);
+
+setfillstyle(SOLID_FILL,0);
+bar(280,230,300,240);
+
+setfillstyle(SOLID_FILL,0);
+bar(340,350,330,440); /*linea n abajo derecha, pasa la mano derecha y el supuesto pantalon*/
+
+setfillstyle(SOLID_FILL,0);/*linea negra arrriba mano derecha*/
+bar(340,380,350,360);
+setfillstyle(SOLID_FILL,14);/*linea amarilla mano derecha*/
+bar(340,380,350,400);
+setfillstyle(SOLID_FILL,0);/*linea negra abajo mano derecha*/
+bar(340,410,350,400);
+setfillstyle(SOLID_FILL,0);/*linea amarilla mano derecha*/
+bar(360,380,350,400);
+setfillstyle(SOLID_FILL,10);/*pixel verde claro derecha*/
+bar(320,370,330,360);
+
+setfillstyle(SOLID_FILL,1);/*pant derecho azul.*/
+bar(310,410,330,430);
+setfillstyle(SOLID_FILL,14);/*pie derecho amarillo.*/
+bar(310,440,330,430);
+setfillstyle(SOLID_FILL,0);
+bar(310,440,300,400);/*linea negra pie, pant derecho*/
+
+setfillstyle(SOLID_FILL,9);
+bar(320,360,260,410);/*Camisa, azul claro*/
+setfillstyle(SOLID_FILL,0);
+bar(250,400,230,410);/*linea negra abajo mano derecha*/
+setfillstyle(SOLID_FILL,14);
+bar(250,380,230,400);/*supuesta mano izq, amarilla*/
+setfillstyle(SOLID_FILL,0);
+bar(250,380,260,400);/*linea negra derecha, mano izq*/
+setfillstyle(SOLID_FILL,0);
+bar(220,360,230,400);/*linea negra izq, mano izq*/
+setfillstyle(SOLID_FILL,9);
+bar(260,360,230,380);/*pixeles azul calro que conforman la camisa*/
+setfillstyle(SOLID_FILL,10);
+bar(260,360,270,370);/*pixeles verdes claros, izquierda de correa de mochila XD*/
+setfillstyle(SOLID_FILL,2);
+bar(260,370,270,410);/*pixeles verdes correa mochila lado izq*/
+setfillstyle(SOLID_FILL,0);
+bar(260,440,250,400);/*linea izq negra de pant y pie izq*/
+setfillstyle(SOLID_FILL,1);
+bar(260,430,280,410);/*pant azul izq*/
+setfillstyle(SOLID_FILL,14);
+bar(260,430,280,440);/*pie izq*/
+setfillstyle(SOLID_FILL,0);
+bar(290,410,280,440);/*linea negra derecha, pie izq*/
+setfillstyle(SOLID_FILL,0);
+bar(300,410,290,420);/*linea negra centra de pants*/
+
+settextstyle(TRIPLEX_FONT, HORIZ_DIR, USER_CHAR_SIZE);
+setusercharsize(3,2,9,4);
+outtext("Adventure time ");
+
+while(1){
+
+sleep(1);
+setfillstyle(SOLID_FILL,14);
+bar(270,310,280,300);/*en esta parte el pixel rojo izq claro se vuele amarillo*/
+setfillstyle(SOLID_FILL,14);
+bar(340,310,330,300);/*pixeles rojo claro, derecha, se vuelve amarillo*/
+setfillstyle(SOLID_FILL,0);
+bar(300,310,290,290);/*ojo izq negro*/
+setfillstyle(SOLID_FILL,0);
+bar(340,310,330,290);/*ojo derecho negro*/
+setfillstyle(SOLID_FILL,14);
+bar(290,310,280,290);/*ojo izq negro, y los ojos de aca se vuelven amarillos para no dejar rastro*/
+setfillstyle(SOLID_FILL,14);
+bar(320,310,330,290);/*ojo derecho negro, se pone en amarillo*/
+
+
+sleep(1);/*creo una ilusion como si esta viendohacia ambos lados*/
+setfillstyle(SOLID_FILL,14);
+bar(300,310,290,290);/*ojo izq */
+setfillstyle(SOLID_FILL,14);
+bar(340,310,330,290);/*ojo derecho */
+/*esta posicion cambia de color para no dejar rastro*/
+setcolor(0);
+
+
+setfillstyle(SOLID_FILL,0);
+bar(270,310,280,290);/*ojo izq negro*/
+setfillstyle(SOLID_FILL,0);
+bar(320,310,310,290);/*ojo derecho negro*/
+
+sleep(1);
+setfillstyle(SOLID_FILL,14);
+bar(270,310,280,290);/*ojo izq en amarilo*/
+setfillstyle(SOLID_FILL,14);
+bar(320,310,310,290);/*ojo derecho en amarillo*/
+
+setfillstyle(SOLID_FILL,0);
+bar(290,310,280,290);/*ojo izq negro*/
+setfillstyle(SOLID_FILL,0);
+bar(320,310,330,290);/*ojo derecho negro*/
+setfillstyle(SOLID_FILL,12);
+bar(340,310,330,300);/*pixeles rojo claro, derecha*/
+setfillstyle(SOLID_FILL,12);
+bar(270,310,280,300);/*pixeles rojo claro izq*/
+
+sleep(1);/*En esta parte los ojos se pusieron amarillos para dar un efecto de parpadeo*/
+setfillstyle(SOLID_FILL,14);
+bar(290,310,280,290);/*ojo izq negro*/
+setfillstyle(SOLID_FILL,14);
+bar(320,310,330,290);/*ojo derecho negro*/
+sleep(1);
+setfillstyle(SOLID_FILL,0);
+bar(290,310,280,290);/*ojo izq negro*/
+setfillstyle(SOLID_FILL,0);
+bar(320,310,330,290);/*ojo derecho negro*/
+}
+/*Creado por Ervin, 2023*/
+
+
+getch();
+}
